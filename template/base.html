@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/vlogo.png" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    #unity-container {
+      margin: auto;
+  display: grid;
+  width: 100%;
+    }
+#react-unity-webgl-canvas-1 {  background: #231F20;  width: 90% !important;
+  height: 85% !important;
+  cursor: default;
+  justify-self: center;
+  display: flex;
+  align-self: center;
+  margin-top: 100px;
+  border: 2px solid #231F20;
+  border-radius: 10px; }
+.unity-mobile #react-unity-webgl-canvas-1 { width: 100%; height: 100%;  justify-self: center;
+  display: flex;
+  align-self: center;
+  margin-top: 100px;
+  border: 2px solid #231F20;
+  border-radius: 10px; }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('./src/assets/TemplateData/unity-logo-dark.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('./src/assets/TemplateData/progress-bar-empty-dark.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('./src/assets/TemplateData/progress-bar-full-dark.png') no-repeat center }
+#unity-footer { width: 960px;
+  display: block;
+  margin: 10px auto; }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('./src/assets/TemplateData/webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('./src/assets/TemplateData/fullscreen-button.png') no-repeat center }
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+  </style>
+    <script type="module" crossorigin src="{% static '/assets/index-BoId_nKJ.js' %}"></script>
+    <link rel="stylesheet" href="{% static '/assets/index-CZqBwJvn.css' %}">
+    <title>VietVu</title>
+    <style>
+      @media screen and (max-width: 480px) {
+        .text-blue-600 {
+          font-size: 82%;
+        }
+         .text-black {
+          font-size: 82%;
+        }
+      }
+</style>
+</head>
+<body>
+    <div id="root"></div>
+   
+</body>
+</html>
